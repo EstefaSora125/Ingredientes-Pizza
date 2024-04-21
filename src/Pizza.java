@@ -1,6 +1,7 @@
 import java.util.*;
 public class Pizza {
-    private final String QUESO = "Queso";
+    private final String CHEESE = "Queso";
+    private final String MUSHROOM = "Champiñón";
 
     public void createPizza(){
         int option = 0;
@@ -12,20 +13,23 @@ public class Pizza {
             System.out.println("Bienvenido a la pizzeria" + "\n"
                     + "Ingresa los ingredientes que quieres añadir a tu pizza"+ "\n"
                     + "1. Queso" + "\n"
-                    + "2. Ninguno de los ingredientes" + "\n"
-                    + "3. Salir" + "\n");
+                    + "2. Champiñón" + "\n"
+                    + "3. Ninguno de los ingredientes" + "\n"
+                    + "4. Salir" + "\n");
 
             option = scanner.nextInt();
 
             switch (option){
                 case 1:
-                    System.out.println("------------Queso agregado------" + "\n");
-                    ingredients = ingredients + "\n" + QUESO;
+                    ingredients = ingredients + "\n" + CHEESE;
                     break;
                 case 2:
-                    menu = true;
+                    ingredients = ingredients + "\n" + MUSHROOM;
                     break;
                 case 3:
+                    menu = true;
+                    break;
+                case 4:
                     menu = true;
                     break;
                 default:
