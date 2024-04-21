@@ -9,7 +9,7 @@ public class Pizza {
         Scanner scanner =  new Scanner(System.in);
 
         while (!menu){
-            System.out.println("Bienvenido a la pizzeria :3" + "\n"
+            System.out.println("Bienvenido a la pizzeria" + "\n"
                     + "Ingresa los ingredientes que quieres añadir a tu pizza"+ "\n"
                     + "1. Queso" + "\n"
                     + "2. Ninguno de los ingredientes" + "\n"
